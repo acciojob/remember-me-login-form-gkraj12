@@ -50,6 +50,10 @@
                 localStorage.setItem("username",username);
                 localStorage.setItem("password",password);
                 existingBtn.style.display = "block"
+            }else{
+                localStorage.removeItem("username");
+                localStorage.removeItem("password");
+                existingBtn.style.display = "none"
             }
 
         })
